@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import Header from "../components/Header.jsx";
+
 class Home extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Header />
-        <h1> Test</h1>
-      </div>
+      </React.Fragment>
     );
   }
 }
