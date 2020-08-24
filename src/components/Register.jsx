@@ -11,21 +11,21 @@ import {
   FormControl,
 } from "react-bootstrap";
 
-const Login = () => {
+const Register = () => {
   const [show, setShow] = useState(false);
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
   return (
-    <div id="Login">
-      <Button className="login-button" variant="danger" onClick={handleShow}>
-        Login
+    <div>
+      <Button variant="secondary" onClick={handleShow}>
+        Register
       </Button>
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <ModalTitle>Login</ModalTitle>
+          <ModalTitle>Register</ModalTitle>
         </Modal.Header>
         <ModalBody>
           <Form>
@@ -38,10 +38,15 @@ const Login = () => {
               <FormLabel>Password</FormLabel>
               <FormControl type="password" placholder="Enter paswword" />
             </FormGroup>
+
+            <FormGroup controlId="role">
+              <FormLabel>Role</FormLabel>
+              <FormControl type="text" placholder="Enter role" />
+            </FormGroup>
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button as="input" variant="primary" type="submit" value="Login" />
+          <Button as="input" variant="primary" type="submit" value="Register" />
 
           <Button
             as="input"
@@ -56,4 +61,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

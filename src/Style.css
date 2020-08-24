@@ -1,0 +1,78 @@
+/*
+    Header Style
+*/
+
+#Header {
+  position: fixed;
+  background-color: #102a43;
+}
+
+#Header p {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#Header .navBrand {
+  width: 40px;
+  height: 50px;
+}
+
+#Header .brand-logo {
+  width: 100%;
+  height: 100%;
+}
+
+#Header .separator {
+  margin: 5px;
+}
+
+/*
+    Home Style
+*/
+
+#homeWrapper {
+  padding: 0;
+}
+
+#Hero {
+  overflow-x: hidden;
+}
+
+.imagecontainer {
+  width: 100vw;
+  height: 100vh;
+  top: 100px;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+}
+
+/*
+    Login Style
+*/
+#Login .login-button {
+  width: 82.4px;
+}
+
+/*
+    Footer Style
+*/
+#Footer {
+  background-color: #102a43;
+  height: 40px;
+}
+
+#Footer .flex-footer {
+  display: flex;
+  flex-direction: row;
+}
+
+#Footer p {
+  text-decoration: none;
+  color: #e5e5e5;
+  text-align: center;
+  margin: 5px 5px 0px 5px;
+}
